@@ -26,7 +26,7 @@ public class Input extends BaseEntity {
     private LocalDate expirationDate;
 
     @ManyToOne
-    @JoinColumn(name = "cnpj_supplier")
+    @JoinColumn(name = "cnpj_supplier", columnDefinition = "char(14)")
     private Supplier supplier;
 }
 

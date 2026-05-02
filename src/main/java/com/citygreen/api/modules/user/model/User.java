@@ -17,7 +17,7 @@ public class User {
     private String email;
 
     @Column(name = "password_hash")
-    private byte[] passwordHash;
+    private String passwordHash;
 
     @Enumerated(EnumType.STRING)
     private StatusType status;

@@ -10,15 +10,5 @@ import java.util.List;
 @Repository
 public interface UserRepository extends JpaRepository<User, String> {
 
-    Optional<User> findByIdUser(String idUser);
-
     Optional<User> findByEmail(String email);
-
-    boolean existsByIdUser(String idUser);
-
-    boolean existsByEmail(String email);
-
-    List<User> findByStatus(StatusType status);
-
-    List<User> findByNameContainingIgnoreCase(String name);
 }

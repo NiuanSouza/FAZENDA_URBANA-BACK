@@ -22,7 +22,11 @@ public class Customer extends BaseEntity {
     private String name;
     private String phone1;
     private String phone2;
+
+    @Column(name = "cnpj", columnDefinition = "char(14)")
     private String cnpj;
+
+    @Column(name = "ie", columnDefinition = "char(9)")
     private String ie;
     private String email;
 
@@ -34,6 +38,8 @@ public class Customer extends BaseEntity {
 
     private String neighborhood;
     private String city;
+
+    @Column(name = "state", columnDefinition = "char(2)")
     private String state;
 
     @Column(name = "zip_code")

@@ -16,6 +16,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Supplier extends BaseEntity {
     @Id
+    @Column(columnDefinition = "char(14)")
     private String cnpj;
 
     private String name;
@@ -42,6 +43,8 @@ public class Supplier extends BaseEntity {
 
     private String neighborhood;
     private String city;
+
+    @Column(columnDefinition = "char(2)")
     private String state;
     private String country;
 
